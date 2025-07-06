@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+#  Chatbot Flow Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A visual chatbot flow builder built using **React** and **React Flow**, created for the BiteSpeed frontend assignment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+👉 **[Live App on Vercel](https://chatbot-webdevelopment.vercel.app/)**  
+_You can interact with the chatbot flow builder directly here._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- 🧱 **Drag & Drop Nodes**  
+  Drag Text Message nodes into the canvas from the Node Panel.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔗 **Connect Nodes**  
+  Easily connect nodes with directional edges using React Flow handles.
 
-### `npm run build`
+- 📝 **Editable Messages**  
+  Click on any node to edit its message in the Settings Panel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ✅ **Validation on Save**  
+  The "Save Flow" button checks that only one node has no outgoing edge — matching typical chatbot flow logic.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Tech Stack
 
-### `npm run eject`
+- **React**
+- **React Flow** (for flow diagram support)
+- **Custom Components** for Node Panel, Settings Panel, Save Logic
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📸 Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+./public/sample-chat-flow.png,
+./public/on-flow-save.png
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📂 Folder Structure
+src/
+├── components/
+│ ├── CustomNode.js
+│ ├── NodePanel.js
+│ └── SettingsPanel.js
+├── App.js
+└── index.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the project locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository using  
+   `git clone https://github.com/pavithra9652/Chatbot-Webdevelopment.git`  
+   and navigate into the project folder:  
+   `cd Chatbot-Webdevelopment`
 
-### Code Splitting
+2. Install dependencies with  
+   `npm install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Start the development server by running  
+   `npm start`  
+   This will open the app at `http://localhost:3000` in your default browser.
 
-### Analyzing the Bundle Size
+Once the app is open:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Click **“Add Text Message”** to insert a node.
+- Drag the node into position on the canvas.
+- Use the black dots on the right (source) and left (target) to connect nodes.
+- Click any node to edit its message in the **Settings Panel**.
+- Click **“Save Flow”** to validate the structure.
+  - ✅ If only one node has no outgoing connection, the flow is valid.
+  - ❌ If multiple nodes have no outgoing edges, an error message appears.
 
-### Making a Progressive Web App
+## 🛠 Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React** – UI library
+- **React Flow** – Visual node-based flow diagram library
+- **CSS** – Custom styling for nodes and layout
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✅ Task Requirements Covered
 
-### Deployment
+- ✅ Custom Text Node rendering
+- ✅ Node Panel (left) and Settings Panel (right)
+- ✅ Editable node content
+- ✅ Handle-based connections (source and target)
+- ✅ Edge rules (only 1 outgoing allowed)
+- ✅ Save validation logic
+- ✅ **Deployed live on Vercel**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🌐 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is deployed and live at:  
+👉 **[https://chatbot-webdevelopment.vercel.app/](https://chatbot-webdevelopment.vercel.app/)**
+
+Deployment was done using **Vercel** (https://vercel.com), with a simple integration from GitHub.
+
+---
+
+## 📬 Contact
+
+Created by **Mopuru Pavithra**  
+For questions, feedback, or collaborations, feel free to connect via **LinkedIn** (https://www.linkedin.com/in/mopuru-pavithra-91a758341/) or open an issue in the GitHub repo.
